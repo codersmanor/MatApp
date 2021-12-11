@@ -1,0 +1,21 @@
+.example-card {
+    max-width: 400px;
+  }
+
+  .example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+
+  .example-full-width {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .form{
+      padding: 0px;
+  }
+  .tool{
+      padding: 0px;
+      text-align: justify;
+  }
+  
