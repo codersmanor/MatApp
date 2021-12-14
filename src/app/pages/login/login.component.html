@@ -1,0 +1,58 @@
+<h3>
+    <mat-toolbar color="primary" class="example-full-width">
+        <div style="margin-left: 50px;">
+            Welcome to Shadi.com
+        </div>
+    </mat-toolbar>
+</h3>
+<mat-tab-group mat-align-tabs="start">
+
+    <mat-tab label="SignIn">
+        <div class="container" style="margin-top: 20px;">
+            <mat-cart style="margin-top: 2px;">
+                <form [formGroup]="loginDetails">
+                    <div class="container form">
+                        <mat-form-field floatLabel="auto" hideRequiredMarker class="example-full-width"
+                            appearance="outline">
+                            <mat-label>Username</mat-label>
+                            <input matInput formControlName="username" placeholder="username" required>
+                        </mat-form-field>
+                    </div>
+                    <div class="container form">
+                        <mat-form-field floatLabel="auto" hideRequiredMarker class="example-full-width"
+                            appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input type="password" formControlName="password" required matInput placeholder="password">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <p>------------------------------------OR------------------------------------</p>
+                    </div>
+
+                    <!-- Google authentication -->
+                    <div class="container form p">
+                        <button class="btn btn-outline-success width-g">Login via Google</button>
+
+                    </div>
+                    <!-- <div>
+                        <p>------------------------------------OR------------------------------------</p>
+                    </div> -->
+                    <!-- Login via facebook -->
+                    <div class="container form p">
+                        <button class="btn btn-outline-primary width-g">Login via Facebook</button>
+                    </div>
+                    <!-- login submit -->
+                    <div class="container form"  style="text-align: center;">
+                        <button (click)="saveForm()" class="width-g" mat-dialog-close mat-raised-button color="primary">Login</button>
+                    </div>
+                </form>
+            </mat-cart>
+        </div>
+
+
+    </mat-tab>
+    <mat-tab label="SignUp">
+        <user-registration></user-registration>
+    </mat-tab>
+
+</mat-tab-group>

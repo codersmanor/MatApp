@@ -18,4 +18,14 @@
       padding: 0px;
       text-align: justify;
   }
-  
+  .mat-dialog-container {
+   padding: 10px;
+  }
+
+  .width-g{
+    width: 296px;
+    padding-top: 8px;
+  }
+  .p{
+    padding-bottom: 18px;
+  }

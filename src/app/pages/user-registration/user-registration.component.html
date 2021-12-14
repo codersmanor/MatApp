@@ -1,0 +1,39 @@
+<div class="container" style="margin-top: 20px;">
+    <mat-cart style="margin-top: 2px;">
+        <form [formGroup]="loginDetails">
+            <div class="container form">
+                <mat-form-field floatLabel="auto" hideRequiredMarker class="example-full-width"
+                    appearance="outline">
+                    <mat-label>Username</mat-label>
+                    <input matInput formControlName="username" placeholder="username" required>
+                </mat-form-field>
+            </div>
+            <div class="container form">
+                <mat-form-field floatLabel="auto" hideRequiredMarker class="example-full-width"
+                    appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input type="password" formControlName="password" required matInput placeholder="password">
+                </mat-form-field>
+            </div>
+            <!-- Mobile Number -->
+            <div class="container form">
+                <mat-form-field floatLabel="auto" hideRequiredMarker class="example-full-width"
+                    appearance="outline">
+                    <mat-label>Mobile</mat-label>
+                    <input type="number" formControlName="mobile" required matInput placeholder="mobile number">
+                </mat-form-field>
+            </div>
+            <!-- Email -->
+            <div class="container form">
+                <mat-form-field floatLabel="auto" hideRequiredMarker class="example-full-width"
+                    appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input type="email" formControlName="email" required matInput placeholder="email... ">
+                </mat-form-field>
+            </div>
+            <div class="container " style="text-align: center;">
+                <button (click)="singUp()"  mat-dialog-close mat-raised-button color="primary">SignUp</button>
+            </div>
+        </form>
+    </mat-cart>
+</div>

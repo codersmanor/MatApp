@@ -10,10 +10,15 @@ export class LoginService {
 
   login(cred:any){
     if(cred.username === 'prashant' && cred.password === 'koshta'){
+      localStorage.setItem('username', cred.username);
       return "login successfully";
     }
     else{
       return "username and password wrong";
     }
+  }
+
+  showUsername(){
+    return localStorage.getItem('username');
   }
 }
