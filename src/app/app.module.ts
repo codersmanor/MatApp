@@ -16,6 +16,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
 import { UserRegistrationComponent } from './pages/user-registration/user-registration.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { UserRegistrationComponent } from './pages/user-registration/user-regist
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    
+    HttpClientModule,
     ReactiveFormsModule,
     MatTabsModule,
     FormsModule,
