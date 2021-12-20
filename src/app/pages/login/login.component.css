@@ -29,3 +29,16 @@
   .p{
     padding-bottom: 18px;
   }
+  #googleId{
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    padding-bottom: 2px;
+  }
+
+  #fb{
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+    padding-bottom: 2px;
+  }

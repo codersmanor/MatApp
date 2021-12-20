@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Prashant",
+      "email": "prashantnff454@gmail.cin",
+      "password": "lbbjhg",
+      "mobile": 45643534
+    },
+    {
+      "username": "username",
+      "password": "password",
+      "mobile": 984322,
+      "email": "prashantkoshta@virtusa.com",
+      "id": 2
+    },
+    {
+      "username": "kp",
+      "password": "pa",
+      "mobile": 7692093765,
+      "email": "prashant10koshta@gmail.com",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "username": "koshta",
+      "password": "jnbkjb",
+      "mobile": 8770925323,
+      "email": "Prashant30Kosht@gmail.com"
+    },
+    {
+      "id": 5,
+      "username": "prmesh",
+      "password": "parmesh",
+      "mobile": 983934,
+      "email": "prashant10koshta@gmail.com"
+    }
+  ]
+}
