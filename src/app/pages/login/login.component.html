@@ -1,10 +1,7 @@
-<h3>
-    <mat-toolbar color="primary" class="example-full-width">
-        <div style="margin-left: 50px;">
-            Welcome to Shadi.com
-        </div>
-    </mat-toolbar>
-</h3>
+<app-navbar></app-navbar>
+
+<mat-card *ngIf="!forgot_password" class="example-card">
+    <mat-card-content>
 <mat-tab-group mat-align-tabs="start">
 
     <mat-tab label="SignIn">
@@ -18,17 +15,27 @@
                             <input matInput formControlName="username" placeholder="username" required>
                         </mat-form-field>
                     </div>
-                    <div class="container form">
+                    <div class="container form" *ngIf="!forgot_password">
                         <mat-form-field floatLabel="auto" hideRequiredMarker class="example-full-width"
                             appearance="outline">
                             <mat-label>Password</mat-label>
-                            <input type="password" formControlName="password" required matInput placeholder="password">
+                            <input  type="password" formControlName="password" required matInput placeholder="password" >
                         </mat-form-field>
                     </div>
-                    <div>
-                        <p>------------------------------------OR------------------------------------</p>
+                    <!-- forgot password input filed -->
+                    <div class="container form" *ngIf="forgot_password">
+                        <mat-form-field floatLabel="auto" hideRequiredMarker class="example-full-width"
+                            appearance="outline">
+                            <mat-label>mobile</mat-label>
+                            <input  type="number" formControlName="password" required matInput placeholder="mobile" >
+                        </mat-form-field>
                     </div>
-
+                    <div class="container ">
+                           <a class="forgot" (click)="forgot()" routerLink="/forgot-password">
+                               forgot password ?
+                           </a>
+                    </div>
+                     <p id="or">------------------------------------OR-----------------------------------</p>
                     <!-- Google authentication -->
                     <div class="container form p">
                         <button class="btn btn-outline-success width-g">
@@ -62,3 +69,5 @@
     </mat-tab>
 
 </mat-tab-group>
+</mat-card-content>
+</mat-card>

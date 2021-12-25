@@ -26,16 +26,34 @@
     width: 296px;
     padding-top: 8px;
   }
-  .p{
-    padding-bottom: 18px;
+  #forgot{
+    margin-top: 70px;
   }
+  .p{
+    padding-bottom: 7px;
+  }
+  #or{
+    padding-bottom: 2px;
+  }
+  .mat-typography p {
+    margin: 0 0 -13px;
+}
+
   #googleId{
     width: 18px;
     height: 18px;
     margin-right: 4px;
     padding-bottom: 2px;
   }
-
+  .example-card {
+    max-width: 352px;
+    margin-left: 490px;
+    margin-top: 30px;
+  }
+.forgot{
+  cursor: pointer;
+  text-decoration: none;
+}
   #fb{
     width: 22px;
     height: 22px;

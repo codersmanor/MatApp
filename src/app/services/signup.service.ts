@@ -3,6 +3,7 @@ import { HttpHeaders, HttpClient, HttpErrorResponse } from '@angular/common/http
 import { User } from '../models/user-registration';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
